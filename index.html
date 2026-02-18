@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Legacy Digital Library</title>
+</head>
+
+<body style="margin:0; font-family:Segoe UI, Arial; background:#0b1120; color:white; scroll-behavior:smooth;">
+
+<!-- ================= NAVBAR ================= -->
+<div style="background:#0f172a; padding:20px 8%; display:flex; justify-content:space-between; flex-wrap:wrap; position:sticky; top:0; z-index:1000; box-shadow:0 5px 20px rgba(0,0,0,0.5);">
+
+<div style="font-size:22px; font-weight:bold;">📚 Legacy Library</div>
+
+<div>
+<a href="#home" style="margin:10px; color:white; text-decoration:none;">Home</a>
+<a href="#catalog" style="margin:10px; color:white; text-decoration:none;">Catalog</a>
+<a href="#videos" style="margin:10px; color:white; text-decoration:none;">Videos</a>
+<a href="#members" style="margin:10px; color:white; text-decoration:none;">Members</a>
+<a href="#info" style="margin:10px; color:white; text-decoration:none;">Info</a>
+<a href="#auth" style="margin:10px; color:#38bdf8; text-decoration:none;">Login / Sign Up</a>
+</div>
+
+</div>
+
+<!-- ================= HERO ================= -->
+<div id="home" style="padding:120px 10%; text-align:center; background:linear-gradient(to right,#0f172a,#111827);">
+
+<h1 style="font-size:42px;">Premium Digital Library</h1>
+<p style="opacity:0.8;">
+<b>Preserving knowledge</b> from 300<sup>BC</sup> to the modern digital era.
+</p>
+
+<form action="#catalog">
+<input type="text" placeholder="Search the catalog..."
+style="padding:12px; width:60%; max-width:400px; border-radius:30px; border:none;">
+<button style="padding:12px 20px; border-radius:30px; border:none;">Search</button>
+</form>
+
+</div>
+
+<!-- ================= CATALOG ================= -->
+<div id="catalog" style="padding:80px 8%; background:#0b1120;">
+
+<h2 style="text-align:center; margin-bottom:50px;">📚 Featured Books</h2>
+
+<div style="display:flex; flex-wrap:wrap; gap:40px; justify-content:center;">
+
+<!-- BOOK 1 -->
+<div style="background:#1e293b; width:280px; padding:20px; border-radius:20px; box-shadow:0 10px 30px rgba(0,0,0,0.6); transition:0.3s;">
+<img src="https://images.unsplash.com/photo-1544947950-fa07a98d237f" width="100%" style="border-radius:15px;">
+<h3>Sapiens</h3>
+<p><b>Category:</b> History</p>
+<p>Evolution of humankind.</p>
+<p>⭐⭐⭐⭐⭐</p>
+<a href="#videos" style="color:#38bdf8;">Watch Documentary</a><br><br>
+<button style="padding:10px 20px; border:none; border-radius:20px; background:#38bdf8; font-weight:bold;">Borrow</button>
+</div>
+
+<!-- BOOK 2 -->
+<div style="background:#1e293b; width:280px; padding:20px; border-radius:20px; box-shadow:0 10px 30px rgba(0,0,0,0.6);">
+<img src="https://images.unsplash.com/photo-1519681393784-d120267933ba" width="100%" style="border-radius:15px;">
+<h3>A Brief History of Time</h3>
+<p><b>Category:</b> Science</p>
+<p>Understanding space & time.</p>
+<p>⭐⭐⭐⭐</p>
+<a href="#videos" style="color:#38bdf8;">Watch Space Video</a><br><br>
+<button style="padding:10px 20px; border:none; border-radius:20px; background:#38bdf8; font-weight:bold;">Borrow</button>
+</div>
+
+<!-- BOOK 3 -->
+<div style="background:#1e293b; width:280px; padding:20px; border-radius:20px; box-shadow:0 10px 30px rgba(0,0,0,0.6);">
+<img src="https://images.unsplash.com/photo-1492724441997-5dc865305da7" width="100%" style="border-radius:15px;">
+<h3>Clean Code</h3>
+<p><b>Category:</b> Technology</p>
+<p>Professional programming practices.</p>
+<p>⭐⭐⭐⭐⭐</p>
+<a href="#videos" style="color:#38bdf8;">Watch Coding Talk</a><br><br>
+<button style="padding:10px 20px; border:none; border-radius:20px; background:#38bdf8; font-weight:bold;">Borrow</button>
+</div>
+
+</div>
+</div>
+
+<!-- ================= VIDEOS ================= -->
+<div id="videos" style="padding:80px 10%; background:#111827; text-align:center;">
+
+<h2>🎥 Educational Videos</h2>
+
+<p>Human Evolution Documentary</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/OM28E1-XH-s?si=uDfS6TaviFeIFzdL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<p>Stephen Hawking Universe Documentary</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/EllbltLLnzo?si=enpGQtREfu8xTsiW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<p>Clean Code & Programming Best Practices</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/DJX3GFzN2oo?si=21KFvWwuLSWzlUBA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+</div>
+
+<!-- ================= INFO SECTION ================= -->
+<div id="info" style="padding:80px 10%; background:#1e293b;">
+
+<h2>📖 Library Information</h2>
+
+<p>
+<i>The Great Library of Alexandria</i> was one of the earliest knowledge centers.<br>
+Water is written H<sub>2</sub>O.<br>
+E = mc<sup>2</sup><br>
+<mark>Digital transformation</mark> defines modern libraries.<br>
+<q>Books are portable magic.</q>
+</p>
+
+<h3>Genres (Unordered List)</h3>
+<ul>
+<li>History</li>
+<li>Science</li>
+<li>Technology</li>
+<li>Fiction</li>
+<li>Biographies</li>
+</ul>
+
+<h3>Top 5 Books (Ordered List)</h3>
+<ol>
+<li>Sapiens</li>
+<li>Clean Code</li>
+<li>1984</li>
+<li>The Hobbit</li>
+<li>The Art of War</li>
+</ol>
+
+<h3>Library Structure (Nested List)</h3>
+<ul>
+<li>Main Building
+    <ul>
+        <li>Reading Hall</li>
+        <li>Archive Room</li>
+    </ul>
+</li>
+<li>Digital Center
+    <ul>
+        <li>E-Books</li>
+        <li>Online Journals</li>
+    </ul>
+</li>
+</ul>
+
+</div>
+
+<!-- ================= MEMBERS TABLE ================= -->
+<div id="members" style="padding:80px 10%; background:#0b1120;">
+
+<h2>👥 Premium Members</h2>
+
+<div style="overflow-x:auto;">
+<table border="1" cellpadding="10" style="border-collapse:collapse; width:100%; background:#1e293b;">
+<tr>
+<th>ID</th><th>Name</th><th>Age</th><th>City</th><th>Level</th>
+<th>Books</th><th>Joined</th><th>Status</th><th>Fines</th><th>Notes</th>
+</tr>
+<tr><td>1</td><td>John</td><td>25</td><td>Nairobi</td><td>Gold</td><td>4</td><td>2022</td><td>Active</td><td>$0</td><td>VIP</td></tr>
+<tr><td>2</td><td>Mary</td><td>30</td><td>Mombasa</td><td>Silver</td><td>2</td><td>2021</td><td>Active</td><td>$5</td><td>Late</td></tr>
+<tr><td>3</td><td>James</td><td>28</td><td>Kisumu</td><td>Gold</td><td>6</td><td>2020</td><td>Active</td><td>$0</td><td>Priority</td></tr>
+<tr><td>4</td><td>Linda</td><td>35</td><td>Eldoret</td><td>Platinum</td><td>8</td><td>2019</td><td>Active</td><td>$2</td><td>Premium</td></tr>
+<tr><td>5</td><td>Peter</td><td>22</td><td>Nakuru</td><td>Bronze</td><td>1</td><td>2023</td><td>Inactive</td><td>$10</td><td>Pending</td></tr>
+</table>
+</div>
+
+</div>
+
+<!-- ================= AUTH SECTION ================= -->
+<div id="auth" style="padding:100px 10%; background:linear-gradient(135deg,#0f172a,#1e293b);">
+
+<h2 style="text-align:center; margin-bottom:60px;">🔐 Member Access</h2>
+
+<div style="display:flex; flex-wrap:wrap; gap:50px; justify-content:center;">
+
+<!-- LOGIN -->
+<div style="background:rgba(255,255,255,0.05); backdrop-filter:blur(15px); padding:40px; border-radius:20px; width:100%; max-width:400px; box-shadow:0 0 40px rgba(0,0,0,0.5);">
+<h3 style="text-align:center;">Login</h3>
+<input type="text" placeholder="Username" style="width:100%; padding:12px; margin:10px 0; border:none; border-radius:10px;">
+<input type="password" placeholder="Password" style="width:100%; padding:12px; margin:10px 0; border:none; border-radius:10px;">
+<a href="#home">
+<button style="width:100%; padding:12px; margin-top:15px; border:none; border-radius:10px; background:#38bdf8; font-weight:bold;">Login</button>
+</a>
+</div>
+
+<!-- SIGN UP -->
+<div style="background:rgba(255,255,255,0.05); backdrop-filter:blur(15px); padding:40px; border-radius:20px; width:100%; max-width:400px; box-shadow:0 0 40px rgba(0,0,0,0.5);">
+<h3 style="text-align:center;">Sign Up</h3>
+<input type="text" placeholder="Full Name" style="width:100%; padding:12px; margin:10px 0; border:none; border-radius:10px;">
+<input type="email" placeholder="Email Address" style="width:100%; padding:12px; margin:10px 0; border:none; border-radius:10px;">
+<input type="password" placeholder="Create Password" style="width:100%; padding:12px; margin:10px 0; border:none; border-radius:10px;">
+<a href="#home">
+<button style="width:100%; padding:12px; margin-top:15px; border:none; border-radius:10px; background:#22c55e; font-weight:bold;">Create Account</button>
+</a>
+</div>
+
+</div>
+</div>
+
+<!-- ================= FOOTER ================= -->
+<div style="background:#0f172a; padding:40px; text-align:center;">
+© 2026 Legacy Digital Library | Premium HTML Assignment
+</div>
+
+</body>
+</html>
