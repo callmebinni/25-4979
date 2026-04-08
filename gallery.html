@@ -1,42 +1,146 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Gallery</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Velour Essence Gallery</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    /* --- General Styles --- */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    nav {
+      background-color: #222;
+      padding: 15px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #ff69b4;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+
+    h1, h2 {
+      text-align: center;
+      color: #222;
+      margin-bottom: 30px;
+    }
+
+    /* --- Grid Layout for Images and Videos --- */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    /* --- Image Styles --- */
+    .grid img {
+      width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .grid img:hover {
+      transform: scale(1.05);
+    }
+
+    /* --- Video Styles --- */
+    .video-gallery iframe {
+      width: 100%;
+      max-width: 560px;
+      height: 315px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    .video-gallery .grid {
+      justify-items: center;
+      margin-bottom: 50px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #222;
+      color: white;
+      margin-top: 50px;
+    }
+  </style>
 </head>
 
 <body>
 
-<nav>
-  <a href="index.html">Home</a>
-  <a href="about.html">About</a>
-  <a href="services.html">Services</a>
-  <a href="gallery.html">Gallery</a>
-  <a href="contact.html">Contact</a>
-</nav>
+  <!-- --- Navigation --- -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+  </nav>
 
-<div class="container">
+  <div class="container">
 
-<h1>Gallery</h1>
+    <!-- --- Gallery Title --- -->
+    <h1>Gallery</h1>
 
-<div class="grid">
-  <img src="https://via.placeholder.com/300">
-  <img src="https://via.placeholder.com/300">
-  <img src="https://via.placeholder.com/300">
-  <img src="https://via.placeholder.com/300">
-  <img src="https://via.placeholder.com/300">
-</div>
+    <!-- --- Image Grid --- -->
+    <div class="grid">
+      <img src="images/photo1.jpg" alt="Elegant interior design">
+      <img src="images/photo2.jpg" alt="Luxurious living room">
+      <img src="images/photo3.jpg" alt="Modern office space">
+      <img src="images/photo4.jpg" alt="Artistic decor details">
+      <img src="images/photo5.jpg" alt="Outdoor ambiance">
+    </div>
 
-<br>
+    <!-- --- YouTube Videos --- -->
+    <div class="video-gallery">
+      <h2>Our Videos</h2>
+      <div class="grid">
+        <!-- Video 1 -->
+        <iframe width="560" height="315" 
+          src="https://www.youtube.com/embed/pMfhyxaGf9I?si=kuVdoppIANstTNg6" 
+          title="YouTube video player" 
+          frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+          referrerpolicy="strict-origin-when-cross-origin" 
+          allowfullscreen>
+        </iframe>
 
-<!-- VIDEOS -->
-<video width="250" controls>
-  <source src="">
-</video>
+        <!-- Video 2 -->
+        <iframe width="560" height="315" 
+          src="https://www.youtube.com/embed/P5FxIZeOF-Y?si=xI2sn0XsV1ehp8CV" 
+          title="YouTube video player" 
+          frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+          referrerpolicy="strict-origin-when-cross-origin" 
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
 
-</div>
+  </div>
 
-<footer>© 2026 Velour Essence</footer>
+  <!-- --- Footer --- -->
+  <footer>© 2026 Velour Essence</footer>
 
 </body>
 </html>
