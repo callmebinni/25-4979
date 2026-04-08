@@ -1,152 +1,57 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Velour Essence Gallery</title>
-  <link rel="stylesheet" href="style.css">
-  <style>
-    /* --- General Styles --- */
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background-color: #f9f9f9;
-      color: #333;
-    }
+<!-- --- YouTube Videos --- -->
+<div class="video-gallery">
+  <h2>Our Videos</h2>
+  <div class="grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; justify-items: center;">
+    
+    <!-- Video 1 -->
+    <iframe width="100%" height="315" 
+      src="https://www.youtube.com/embed/pMfhyxaGf9I?si=kuVdoppIANstTNg6" 
+      title="YouTube video player" 
+      frameborder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+      referrerpolicy="strict-origin-when-cross-origin" 
+      allowfullscreen>
+    </iframe>
 
-    nav {
-      background-color: #222;
-      padding: 15px;
-      text-align: center;
-    }
+    <!-- Video 2 -->
+    <iframe width="100%" height="315" 
+      src="https://www.youtube.com/embed/P5FxIZeOF-Y?si=xI2sn0XsV1ehp8CV" 
+      title="YouTube video player" 
+      frameborder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+      referrerpolicy="strict-origin-when-cross-origin" 
+      allowfullscreen>
+    </iframe>
 
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 15px;
-      font-weight: bold;
-    }
+    <!-- Video 3 -->
+    <iframe width="100%" height="315" 
+      src="https://www.youtube.com/embed/6l-4iC18H68?si=A-eZUqUZL4z0P_f0" 
+      title="YouTube video player" 
+      frameborder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+      referrerpolicy="strict-origin-when-cross-origin" 
+      allowfullscreen>
+    </iframe>
 
-    nav a:hover {
-      color: #ff69b4;
-    }
+    <!-- Video 4 (empty slot) -->
+    <iframe width="100%" height="315" 
+      src="" 
+      title="YouTube video player" 
+      frameborder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+      referrerpolicy="strict-origin-when-cross-origin" 
+      allowfullscreen>
+    </iframe>
 
-    .container {
-      max-width: 1100px;
-      margin: 30px auto;
-      padding: 0 20px;
-    }
-
-    h1, h2 {
-      text-align: center;
-      color: #222;
-      margin-bottom: 30px;
-    }
-
-    /* --- Grid Layout for Images and Videos --- */
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-    }
-
-    /* --- Image Styles --- */
-    .grid img {
-      width: 100%;
-      border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      transition: transform 0.3s;
-    }
-
-    .grid img:hover {
-      transform: scale(1.05);
-    }
-
-    /* --- Video Styles --- */
-    .video-gallery iframe {
-      width: 100%;
-      max-width: 560px;
-      height: 315px;
-      border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    }
-
-    .video-gallery .grid {
-      justify-items: center;
-      margin-bottom: 50px;
-    }
-
-    footer {
-      text-align: center;
-      padding: 20px;
-      background-color: #222;
-      color: white;
-      margin-top: 50px;
-    }
-  </style>
-</head>
-
-<body>
-
-  <!-- --- Navigation --- -->
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="services.html">Services</a>
-    <a href="gallery.html">Gallery</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-
-  <div class="container">
-
-    <!-- --- Gallery Title --- -->
-    <h1>Gallery</h1>
-
-    <!-- --- Image Grid --- -->
-   <div class="grid">
-  <img src="https://images.pexels.com/photos/28482021/pexels-photo-28482021.jpeg" alt="Face cream and hyaluronic serum">
-  <img src="https://images.pexels.com/photos/5699490/pexels-photo-5699490.jpeg" alt="Skincare bottles & beauty essentials">
-  <img src="https://images.pexels.com/photos/3992918/pexels-photo-3992918.jpeg" alt="Skincare products on wooden tray">
-  <img src="https://images.pexels.com/photos/5077042/pexels-photo-5077042.jpeg" alt="Elegant skincare pro flat lay">
-  <img src="https://images.pexels.com/photos/6802043/pexels-photo-6802043.jpeg" alt="Spa and skincare ambience">
-  <img src="https://images.pexels.com/photos/5680837/pexels-photo-5680837.jpeg" alt="Luxury skincare set on pastel background">
-  <img src="https://images.pexels.com/photos/356046/pexels-photo-356046.jpeg" alt="Cosmetic bottles & natural leaves flat lay">
-  <img src="https://images.pexels.com/photos/4215118/pexels-photo-4215118.jpeg" alt="Moisturizer & serum on soft background">
-  <img src="https://images.pexels.com/photos/4348404/pexels-photo-4348404.jpeg" alt="Beauty and wellness set of skincare">
-  <img src="https://images.pexels.com/photos/3992917/pexels-photo-3992917.jpeg" alt="Skincare product flat lay with leaves">
-</div>
-    </div>
-
-    <!-- --- YouTube Videos --- -->
-    <div class="video-gallery">
-      <h2>Our Videos</h2>
-      <div class="grid">
-        <!-- Video 1 -->
-        <iframe width="560" height="315" 
-          src="https://www.youtube.com/embed/pMfhyxaGf9I?si=kuVdoppIANstTNg6" 
-          title="YouTube video player" 
-          frameborder="0" 
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-          referrerpolicy="strict-origin-when-cross-origin" 
-          allowfullscreen>
-        </iframe>
-
-        <!-- Video 2 -->
-        <iframe width="560" height="315" 
-          src="https://www.youtube.com/embed/P5FxIZeOF-Y?si=xI2sn0XsV1ehp8CV" 
-          title="YouTube video player" 
-          frameborder="0" 
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-          referrerpolicy="strict-origin-when-cross-origin" 
-          allowfullscreen>
-        </iframe>
-      </div>
-    </div>
+    <!-- Video 5 (empty slot) -->
+    <iframe width="100%" height="315" 
+      src="" 
+      title="YouTube video player" 
+      frameborder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+      referrerpolicy="strict-origin-when-cross-origin" 
+      allowfullscreen>
+    </iframe>
 
   </div>
-
-  <!-- --- Footer --- -->
-  <footer>© 2026 Velour Essence</footer>
-
-</body>
-</html>
+</div>
