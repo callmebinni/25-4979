@@ -1,43 +1,167 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Contact</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Velour Essence</title>
   <link rel="stylesheet" href="style.css">
-</head>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #fefcfb;
+      color: #333;
+    }
 
+    nav {
+      background-color: #222;
+      padding: 15px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ff69b4;
+    }
+
+    .container {
+      max-width: 700px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #222;
+      margin-bottom: 30px;
+    }
+
+    /* --- Nested List Styling --- */
+    ul {
+      list-style-type: disc;
+      margin-left: 20px;
+      margin-bottom: 30px;
+    }
+
+    ul ul {
+      list-style-type: circle;
+      margin-left: 20px;
+    }
+
+    li {
+      font-size: 1rem;
+      margin-bottom: 5px;
+      color: #555;
+    }
+
+    /* --- Form Styling --- */
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    input, textarea {
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 1rem;
+      width: 100%;
+      box-sizing: border-box;
+      transition: border-color 0.3s, box-shadow 0.3s;
+    }
+
+    input:focus, textarea:focus {
+      border-color: #ff69b4;
+      box-shadow: 0 0 5px rgba(255, 105, 180, 0.5);
+      outline: none;
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 120px;
+    }
+
+    button {
+      padding: 12px;
+      background-color: #ff69b4;
+      color: white;
+      font-weight: bold;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      font-size: 1rem;
+    }
+
+    button:hover {
+      background-color: #e0559e;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #222;
+      color: white;
+      margin-top: 50px;
+    }
+
+    @media(max-width:600px){
+      h1{ font-size:1.5rem; }
+      input, textarea, button { font-size:0.95rem; }
+    }
+  </style>
+</head>
 <body>
 
-<nav>
-  <a href="index.html">Home</a>
-  <a href="about.html">About</a>
-  <a href="services.html">Services</a>
-  <a href="gallery.html">Gallery</a>
-  <a href="contact.html">Contact</a>
-</nav>
+  <!-- Navigation -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+  </nav>
 
-<div class="container">
+  <div class="container">
+    <h1>Contact Us</h1>
 
-<h1>Contact Us</h1>
-
-<!-- NESTED LIST -->
-<ul>
-  <li>Products
+    <!-- Nested Product List -->
+    <h2>Our Products</h2>
     <ul>
-      <li>Skincare</li>
-      <li>Beauty</li>
+      <li>Skincare
+        <ul>
+          <li>Face Cream</li>
+          <li>Serum</li>
+          <li>Cleanser</li>
+        </ul>
+      </li>
+      <li>Beauty
+        <ul>
+          <li>Lip Balm</li>
+          <li>Body Lotion</li>
+        </ul>
+      </li>
     </ul>
-  </li>
-</ul>
 
-<br>
+    <!-- Contact Form -->
+    <form action="#" method="post">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Submit</button>
+    </form>
 
-<input type="text" placeholder="Your Name"><br><br>
-<input type="email" placeholder="Email"><br><br>
-<button>Submit</button>
+  </div>
 
-</div>
-
-<footer>© 2026 Velour Essence</footer>
+  <footer>© 2026 Velour Essence</footer>
 
 </body>
 </html>
